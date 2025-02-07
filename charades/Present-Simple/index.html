@@ -1,0 +1,270 @@
+
+<html>
+<head>
+<title>Charades Present Simple</title>
+<link rel="icon" href="https://2.bp.blogspot.com/-f6gS2PGbwoI/VH_Nrzwt0nI/AAAAAAAADwk/OFDjFsACvk4/s1600/The%2BGreen%2BChalkboard%2BFavicon.ico" type="image/x-icon" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+
+<style xmlns="https://www.w3.org/2000/svg" type="text/css">
+  @import url(https://fonts.googleapis.com/css?family=Patua+One);
+  @import url(https://fonts.googleapis.com/css?family=Rye);
+</style>
+
+<style>
+#button1 {
+	display:block;
+	width:200px;
+	height:70px;
+	font-family: 'Patua One', cursive;
+	color:#E8E8E8;
+	font-size: 15px;
+	line-height:13px;
+	cursor:pointer;
+	background:#B00000;
+	border:6px solid #DDB500;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+}
+#Sentencebg {
+	display:block;
+	width:950px;
+	height:90px;
+	background:#FFFFFF;
+	border:5px solid #000000;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	opacity: 0.85;
+    filter: alpha(opacity=85); /* For IE8 and earlier */
+}
+#Destinationbg {
+	display:block;
+	width:400px;
+	height:200px;
+	background:#FFFFFF;
+	border:3px solid #000000;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	opacity: 0.85;
+    filter: alpha(opacity=85); /* For IE8 and earlier */
+}
+#Mimeinfo {
+	width:100px;
+	height:110px;
+	background:#FFFFFF;
+	border:2px solid #000000;
+	font-family: 'Rye', cursive;
+	color:#000B61;
+	font-size: 70px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+#Mimeinfo2 {
+	width:100px;
+	height:110px;
+	background:#FFFFFF;
+	border:2px solid #000000;
+	font-family: 'Rye', cursive;
+	color:#000B61;
+	font-size: 22px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+}
+#textarea {
+    vertical-align: middle;
+}
+#MeBg {
+    width:32px;
+    height: 32px;
+    background-color:#FFFFFF;
+	border:0px solid #CF0B00;
+	-moz-border-radius: 32px;
+	-webkit-border-radius: 32px;
+	border-radius: 32px; //**para hacer cuadrados de borde redondo**//
+}
+</style>
+
+<script type='text/javascript'>//<![CDATA[
+window.onclick=function draw(){
+function countdown( elementName, minutes, seconds )
+{
+    var element, endTime, hours, mins, msLeft, time;
+
+    function twoDigits( n )
+    {
+        return (n <= 9 ? "0" + n : n);
+    }
+
+    function updateTimer()
+    {
+        msLeft = endTime - (+new Date);
+        if ( msLeft < 1000 ) {
+            element.innerHTML = "TIME'S</br>OVER";
+			timer = document.getElementById( 'timer-beep' ).play();
+        } else {
+            time = new Date( msLeft );
+            hours = time.getUTCHours();
+            mins = time.getUTCMinutes();
+            element.innerHTML = (hours ? hours + ':' + twoDigits( mins ) : mins) + ':' + twoDigits( time.getUTCSeconds() );
+            setTimeout( updateTimer, time.getUTCMilliseconds() + 500 );
+        }
+    }
+
+    element = document.getElementById( elementName );
+    endTime = (+new Date) + 1000 * (60*minutes + seconds) + 500;
+    updateTimer();
+}
+
+
+countdown( "countdown", 1, 0 );
+countdown( "countdown2", 100, 0 );
+}//]]> 
+
+</script>
+
+
+<style>
+.wrapper {width:100%; /*960/1640 = .58536585*/ margin:0 auto;}
+.resize {width:100%; height:auto;}
+</style>
+
+</head>
+
+<body background="#" bgcolor="292740" style="overflow-x:hidden"/>
+
+<div class="wrapper" style="position: fixed; margin: -8px 0px 0px -8px;"/>
+<img class="resize" src="https://4.bp.blogspot.com/-wsvujnmSWfw/VsyGS2WC60I/AAAAAAAAEqg/qWJ2pkuAb1s/s1600-r/Casino-Dark-Blue.jpg">
+</div>
+
+<div style="width:1002px;position:relative;margin-left:auto;margin-right:auto;">
+
+<div style="position: absolute; margin: 5px 0px 0px 266px;"/>
+<a href="https://thegreenchalkboard.blogspot.com" target="_blank"/><img border="0" src="https://2.bp.blogspot.com/-Gv6HUZZ8irI/VZMq54LlKQI/AAAAAAAAEJ8/ZXgKnZ8iHo0/s1600/TGC-Title.png" width="" height="" title="" /></a>
+</div>
+
+<span style="position: absolute; margin: 55px 50px 10px 250px;">
+<div style="text-align: center; margin:0 auto; line-height:27px; width:500px;">
+<a style="font-size: 35px; color:#E8C900; font-family: 'Rye', cursive;">CHARADES</a></br>
+<a style="font-size: 18px; color:#E8C900; font-family: 'Rye', cursive;">Present Simple</a></br>
+</div>
+</span>
+
+<textarea style="display: none; width: 180px; height: 490px; background-color:transparent; border:2px solid #FC0101; border-radius: 5px; text-align: center; font-size: 10px; line-height: 0px; color:#000000; font-family: 'Rye', cursive; vertical-align: middle;"  id="source">
+I get up at 5 o'clock
+She brushes her teeth
+He has breakfast at 7 o'clock
+We don't take a bus
+He always drives his car
+She never takes a taxi
+She works in a school
+We study in the mornings
+They don't work at night
+She has lunch in a restaurant
+I usually drink coffee
+She doesn't use her phone
+He always wears tennis
+I never wear jeans
+We sometimes watch TV
+They don't like English
+He finishes work at 5 o'clock
+She cooks pasta
+I don't like cooking
+She loves dancing
+He doesn't like reading
+They love candies
+I love listening to music
+I always use my phone
+She never drinks beer
+He sometimes rides a bicycle
+We always eat fruit
+They never do exercise
+You always arrive late
+You never call me
+I always take a shower
+I usually do my homework
+</textarea>
+
+<div style="position: absolute; margin: 150px 0px 0px 400px; line-height:4px;"/>
+<a href="javascript://"><button id="button1" onClick="draw()"/>CLICK HERE TO PICK THE NEXT ONE</button></a>
+</div>
+
+<button id="Mimeinfo" style="position: absolute; margin: 100px 0px 0px 153px;"/>
+<a style="font-size: 15px; line-height:15px; color:#000B61; font-family: 'Rye', cursive;">Present</a></br>
+<a style="font-size: 20px; line-height:20px; color:#000B61; font-family: 'Rye', cursive;">Simple</a>
+</button>
+
+<button id="Mimeinfo2" style="position: absolute; margin: 100px 0px 0px 730px;"/>
+<a style="font-size: 15px; line-height:15px; color:#000B61; font-family: 'Rye', cursive;">Timer:</a></br>
+<div id="countdown"/>
+</button>
+
+<div style="position: absolute; margin: 78px 0px 0px 20px;"/>
+<img src="https://4.bp.blogspot.com/-om3DL62wCxg/Vsu9zDu6E1I/AAAAAAAAEqE/rMnuCr6kICE/s1600-r/Charades-Mime-01.png" width="184" height="204"/>
+</div>
+
+<div style="position: absolute; margin: 78px 0px 0px 780px;"/>
+<img src="https://1.bp.blogspot.com/-9XVR8cgoRTw/VsvAVSKWlPI/AAAAAAAAEqQ/pMDGLglKZ34/s1600-r/Charades-Mime-02.png" width="184" height="204"/>
+</div>
+
+<div id="Sentencebg" style="position: absolute; margin: 270px 0px 0px 16px;"/></div>
+<div id="Destinationbg" style="position: absolute; margin: 430px 0px 0px 300px;"/></div>
+
+<div style="position: absolute; margin: 280px 0px 0px 26px; line-height:25px; display:inline-block; vertical-align: middle;"/>
+<textarea style="width: 940px; height: 80px; background-color:transparent; border:4px solid #000000; border-radius: 15px; text-align: center; font-size: 40px; color:#000B61; font-family: 'Rye', cursive; line-height: 60px;" id="main">
+</textarea>
+</div>
+
+
+<audio id="timer-beep">
+  <source src="alert1.mp3"/>
+</audio>
+
+<audio id="sound">
+  <source src="Drum-Roll.mp3"/>
+</audio>
+
+<span style="position: absolute; margin: 385px 0px 0px 300px;">
+<div style="text-align: center; margin:0 auto; line-height:27px; width:400px;">
+<a style="font-size: 18px; color:#E8C900; font-family: 'Rye', cursive;">The sentences represented are:</a></div>
+</span>
+
+<div style="position: absolute; margin: 440px 0px 50px 310px; line-height:25px; display:inline-block; vertical-align: middle;"/>
+<textarea style="width: 385px; height: 185px; background-color:transparent; border:3px solid #000000; border-radius: 10px; text-align: center; font-size: 15px; line-height:15px; color:#000000; font-family: 'Rye', cursive;" id="dest">
+</textarea>
+</div>
+
+
+<script>
+function draw() {
+    var sourceVal = document.getElementById("source").value;
+    var names = $.trim(sourceVal).split("\n");
+    var rand = Math.floor(Math.random()*(names.length));
+    var pick = names[rand]; document.getElementById( 'sound' ).play();
+    document.getElementById("source").value = sourceVal.replace(pick+"\n", "").replace(pick, "");
+    document.getElementById("dest").value+=pick+"\n";
+	document.getElementById("main").value=pick+"";
+}
+</script>
+
+<div id="MeBg" style="position: absolute; margin: 9px 0px 0px 809px;"/></div>
+
+<div style="position: absolute; margin: 10px 0px 0px 810px;"/>
+<a href="https://thegreenchalkboard.blogspot.com" target="_blank"><img style="border: 0px solid #B3B3B3;" src="https://2.bp.blogspot.com/-87diTTkeBMs/VaRu4J5vPAI/AAAAAAAAEME/W6YAHext6G8/s1600/Designed%2BBy%2BTeacher%2BChristian%2BSerrano.png" width="30" height="30" title="Christian Serrano" /></a></div>
+
+<span style="position: absolute; margin: 13px 50px 10px 845px;">
+<div style="text-align: left; margin:0 auto; line-height:13px; width:150px;">
+<a style="font-size: 12px; color:#FC0101; font-family: 'Patua One', cursive;">Designed and Created by:</a></br>
+<a style="font-size: 11px; color:#FFFFFF; font-family: 'Patua One', cursive;">Teacher Christian Serrano</a>
+</div>
+</span>
+
+
+</div>
+</body>
+</html>
+
